@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'Arial';
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AddContacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+input {
+    padding-left: 20px;
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #e8ebec;
+    margin-bottom: 10px;
+    color: #333232;
+}
+
+button {
+    z-index: 999;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    background-color: #407BFF;
+    font-weight: 600;
+    transition: ease 0.5s;
+}
+button:hover {
+    background-color: #1a4ab1;
+}
+
+img {
+    margin-top: -40px;
+    width: 400px;
+}
+p {
+    margin-top: -50px;
+    color: #407BFF;
+    text-align: center;
+}
+span {
+    font-weight: 600;
+}
+h1 {
+    color: #407BFF;
+    margin-bottom: -5px;
+}
