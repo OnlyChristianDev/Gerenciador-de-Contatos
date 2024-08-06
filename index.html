@@ -8,20 +8,25 @@
 </head>
 <body>
     <div class="main">
-        <div>
+        <div class="all">
             <h1>
                 Contatos
             </h1>
         <div class="AddContacts">
-            <input type="text" placeholder="Nome">
+            <input class="nameInput" type="text" placeholder="Nome">
             <input class="phoneNumber" type="number" placeholder="Contato">
-            <button>Adicionar</button>
-            <img src="imgs/Contact us-rafiki.png" alt="">
-            <p>Nenhum contato encontrado. <br> <span> Adicione um!</span></p>
+            <button class="btn">Adicionar</button>
+            <div class="noContacts">
+                <img src="imgs/Contact us-rafiki.png" alt="">
+                <p>Nenhum contato encontrado. <br> <span> Adicione um!</span></p>
+            </div>
+        </div>
+        <div class="contacts">
+
         </div>
     </div>
     </div>
-    
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/uuid.min.js"></script>
 <script src="app.js"></script>

@@ -13,6 +13,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+.all {
+    height: 600px;
+}
 .AddContacts {
     display: flex;
     align-items: center;
