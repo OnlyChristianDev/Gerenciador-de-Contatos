@@ -16,13 +16,14 @@ body {
 .all {
     height: 600px;
 }
+
 .AddContacts {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
+
 input {
     padding-left: 20px;
     width: 500px;
@@ -49,6 +50,8 @@ button {
     transition: ease 0.5s;
 }
 button:hover {
+    width: 105px;
+    height: 43px;
     background-color: #1a4ab1;
 }
 
@@ -61,10 +64,68 @@ p {
     color: #407BFF;
     text-align: center;
 }
-span {
+.fontBold {
     font-weight: 600;
 }
 h1 {
     color: #407BFF;
     margin-bottom: -5px;
+}
+
+ul {
+    padding: 0;
+}
+
+.photoDiv {
+    margin-left: 10px;
+    display: flex;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #407BFF;
+    margin-right: 20px;
+}
+.newLi {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.divAddContacts {
+    position: relative;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #e8ebec;
+    display: flex;
+}
+.SpanName {
+    font-weight: 600;
+    margin-bottom: -4px;
+}
+.SpanTel {
+    font-size: 10px;
+    color: #868181;
+}
+i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+i:hover {
+    color: #407BFF;
+}
+.contacts {
+    max-height: 430px; 
+    overflow-y: auto; 
+    padding: 10px; 
+    box-sizing: border-box;
 }
