@@ -15,7 +15,7 @@
             </h1>
         <div class="AddContacts">
             <input class="nameInput" type="text" placeholder="Nome">
-            <input class="phoneNumber" type="text" placeholder="(XX) XXXX-XXXX">
+            <input id="phone" class="phoneNumber" type="text" placeholder="(XX) XXXX-XXXX">
             <button class="btn">Adicionar</button>
             <div class="noContacts">
                 <img src="imgs/Contact us-rafiki.png" alt="">
@@ -31,3 +31,10 @@
 </body>
 </html>
 <script type="module" src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/imask@latest/dist/imask.min.js"></script>
+<script>
+    const phoneInput = document.getElementById('phone');
+    const phoneMask = IMask(phoneInput, {
+        mask: '+{55} (00) 0000-0000'
+    });
+</script>

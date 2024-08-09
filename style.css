@@ -15,6 +15,10 @@ body {
 }
 .all {
     height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .AddContacts {
@@ -138,4 +142,89 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="number"] {
     -moz-appearance: textfield;
+}
+
+
+@media (max-width: 768px) {
+    input {
+        width: 60vw;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .all {
+        width: 100vw;
+    }
+    img {
+        width: 50vw;
+    }
+    button {
+        width: 20vw;
+    }
+    p {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 652px) {
+    input {
+        width: 60vw;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .all {
+        width: 100vw;
+    }
+    img {
+        width: 55vw;
+    }
+    button {
+        width: 20vw;
+    }
+    p {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 425px) {
+    input {
+        width: 80vw;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .all {
+        width: 80vw;
+    }
+    img {
+        width: 90vw;
+    }
+    button {
+        width: 25vw;
+    }
+    p {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 320px) {
+    input {
+        width: 70vw;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .all {
+        width: 80vw;
+    }
+    img {
+        width: 80vw;
+    }
+    button {
+        width: 30vw;
+    }
+    p {
+        font-size: 4vw;
+    }
 }
