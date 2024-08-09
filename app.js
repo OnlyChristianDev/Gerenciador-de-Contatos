@@ -80,19 +80,24 @@ class GerenciadorContatos {
 const gerenciador = new GerenciadorContatos
 
 const adicionarContato = () => {
-    const nome = NameInput.value;
-    const telefone = phoneNumber.value;
-    if (nome && telefone){
-        const id = uuidv4();
-        gerenciador.adicionarContato(nome, telefone, id);
-        console.log(`Contato adicionado: ${nome}, ${telefone}, ${id}`);
-        NameInput.value = '';
-        phoneNumber.value = '';
-        gerenciador.atualizarLista()
+    const nome = NameInput.value.trim();
+    const telefone = phoneNumber.value.trim();
+    
+    if (nome && telefone) {
+      
+        if (telefone.length < 20) {
+            alert("Digite um número de telefone válido com pelo menos 8 dígitos.");
+        } else {
+            const id = uuidv4();
+            gerenciador.adicionarContato(nome, telefone, id);
+            console.log(`Contato adicionado: ${nome}, ${telefone}, ${id}`);
+            NameInput.value = '';
+            phoneNumber.value = '';
+            gerenciador.atualizarLista();
+        }
     } else {
-        alert ("Digite um número e um telefone")
+        alert("Digite um nome para o contato e um telefone.");
     }
-  
 };
 
 

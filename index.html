@@ -10,15 +10,15 @@
 <body>
     <div class="main">
         <div class="all">
-            <h1>
-                Contatos
-            </h1>
+                <h1>
+                    Contatos
+                </h1>
         <div class="AddContacts">
             <input class="nameInput" type="text" placeholder="Nome">
             <input id="phone" class="phoneNumber" type="text" placeholder="(XX) XXXX-XXXX">
             <button class="btn">Adicionar</button>
             <div class="noContacts">
-                <img src="imgs/Contact us-rafiki.png" alt="">
+                <img src="imgs/Contact us-rafiki.png" alt="sem contatos">
                 <p>Nenhum contato encontrado. <br> <span class="fontBold"> Adicione um!</span></p>
             </div>
         </div>
@@ -35,6 +35,6 @@
 <script>
     const phoneInput = document.getElementById('phone');
     const phoneMask = IMask(phoneInput, {
-        mask: '+{55} (00) 0000-0000'
+        mask: '+{55} (00) 0 0000-0000'
     });
 </script>

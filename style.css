@@ -14,10 +14,9 @@ body {
     justify-content: center;
 }
 .all {
-    height: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     justify-content: center;
 }
 
@@ -71,6 +70,7 @@ p {
 .fontBold {
     font-weight: 600;
 }
+
 h1 {
     color: #407BFF;
     margin-bottom: -5px;
@@ -79,7 +79,6 @@ h1 {
 ul {
     padding: 0;
 }
-
 .photoDiv {
     margin-left: 10px;
     display: flex;
@@ -100,6 +99,7 @@ ul {
     flex-direction: column;
 }
 .divAddContacts {
+    width: 510px;
     position: relative;
     height: 50px;
     border-radius: 5px;
@@ -117,6 +117,7 @@ ul {
     font-size: 10px;
     color: #868181;
 }
+
 i {
     position: absolute;
     right: 10px;
@@ -127,12 +128,17 @@ i {
 i:hover {
     color: #407BFF;
 }
+.display {
+    display: none;
+}
 .contacts {
     max-height: 430px; 
     overflow-y: auto; 
     padding: 10px; 
     box-sizing: border-box;
 }
+
+
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -153,16 +159,19 @@ input[type="number"] {
         font-size: 30px;
     }
     .all {
-        width: 100vw;
+        width: 60vw;
     }
     img {
-        width: 50vw;
+       width: 300px;
     }
     button {
         width: 20vw;
     }
     p {
         font-size: 2vw;
+    }
+    .divAddContacts {
+        width: 57vw;
     }
 }
 
@@ -174,16 +183,19 @@ input[type="number"] {
         font-size: 30px;
     }
     .all {
-        width: 100vw;
+        width: 60vw;
     }
     img {
-        width: 55vw;
+        min-width: 300px;
     }
     button {
         width: 20vw;
     }
     p {
         font-size: 3vw;
+    }
+    .divAddContacts {
+        width: 56vw;
     }
 }
 
@@ -198,13 +210,16 @@ input[type="number"] {
         width: 80vw;
     }
     img {
-        width: 90vw;
+        min-width: 300px;
     }
     button {
         width: 25vw;
     }
     p {
         font-size: 4vw;
+    }
+    .divAddContacts {
+        width: 75vw;
     }
 }
 
@@ -219,12 +234,17 @@ input[type="number"] {
         width: 80vw;
     }
     img {
-        width: 80vw;
+        min-width: 230px;
+        margin-bottom: 10px;
     }
     button {
         width: 30vw;
+        margin-bottom: 10px;
     }
     p {
         font-size: 4vw;
+    }
+    .divAddContacts {
+        width: 73vw;
     }
 }
