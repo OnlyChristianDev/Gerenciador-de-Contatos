@@ -16,8 +16,6 @@ body {
 .all {
     display: flex;
     flex-direction: column;
-    
-    justify-content: center;
 }
 
 .AddContacts {
