@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     font-family: 'poppins', 'Arial';
@@ -14,8 +15,13 @@ body {
     justify-content: center;
 }
 .all {
+    width: 510px;
     display: flex;
     flex-direction: column;
+}
+
+.heigth {
+    height: 440px;
 }
 
 .AddContacts {
@@ -97,12 +103,11 @@ ul {
     flex-direction: column;
 }
 .divAddContacts {
-    width: 510px;
+    width: 100%;
     position: relative;
     height: 50px;
     border-radius: 5px;
     margin-top: 10px;
-    display: flex;
     align-items: center;
     background-color: #e8ebec;
     display: flex;
@@ -130,9 +135,9 @@ i:hover {
     display: none;
 }
 .contacts {
-    max-height: 430px; 
+    width: 510px;
+    max-height: 300px; 
     overflow-y: auto; 
-    padding: 10px; 
     box-sizing: border-box;
 }
 
@@ -168,8 +173,8 @@ input[type="number"] {
     p {
         font-size: 2vw;
     }
-    .divAddContacts {
-        width: 57vw;
+    .contacts {
+        width: 63vw;
     }
 }
 
@@ -192,9 +197,10 @@ input[type="number"] {
     p {
         font-size: 3vw;
     }
-    .divAddContacts {
-        width: 56vw;
+    .contacts {
+        width: 63vw;
     }
+
 }
 
 @media (max-width: 425px) {
@@ -216,8 +222,8 @@ input[type="number"] {
     p {
         font-size: 4vw;
     }
-    .divAddContacts {
-        width: 75vw;
+    .contacts {
+        width: 83vw;
     }
 }
 
@@ -242,7 +248,7 @@ input[type="number"] {
     p {
         font-size: 4vw;
     }
-    .divAddContacts {
-        width: 73vw;
+    .contacts {
+        width: 76vw;
     }
 }
